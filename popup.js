@@ -81,7 +81,7 @@ function process_alert_map() {
     let sign = currency.buy ? '&lt;' : '&gt;';
     final_text += '<tr><td>' + currency.coin + sign + currency.price + '</td><td>' + current_price + '</td>';
     final_text += '<td><a id="' + button_id + '"><span class="glyphicon glyphicon-remove"></span></a></td>';
-    final_text += '<td><a id="view_' + button_id + '" href="https://www.binance.com/trade.html?symbol=';
+    final_text += '<td><a id="view_' + button_id + '" https://www.binance.com/en/trade/pro/';
     final_text += currency.coin + '"><span class="glyphicon glyphicon-link"></span></a></td></tr>';
   }
   return final_text;

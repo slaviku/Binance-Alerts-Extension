@@ -12,7 +12,7 @@ function show(title, message, symbol) {
         requireInteraction: true
     });
     notification.onclick = function () {
-        window.open("https://www.binance.com/trade.html?symbol=" + symbol);
+        window.open("https://www.binance.com/en/trade/pro/" + symbol);
         notification.close();
     };
 }
@@ -25,7 +25,7 @@ function get_prices() {
             update_prices();
         }
     };
-    http.open("GET", "https://api.binance.com//api/v1/ticker/allPrices", true);
+    http.open("GET", "https://api.binance.com/api/v3/ticker/price", true);
     http.send();
 }
 
