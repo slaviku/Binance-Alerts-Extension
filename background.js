@@ -25,7 +25,7 @@ function get_prices() {
             update_prices();
         }
     };
-    http.open("GET", "https://api.binance.com//api/v1/ticker/allPrices", true);
+    http.open("GET", "https://api.binance.com/api/v3/ticker/price", true);
     http.send();
 }
 
